@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimize DFA</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/cytoscape@3.20.0/dist/cytoscape.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="finite">Finite Automaton Designer</h1>
+
+        <form action="" id="fa-form">
+
+            <h1 class="title">Design a Finite Automaton</h1>
+            <label for="states">States</label>
+            <input type="text" id="states" required><br>
+
+            <label for="alphabet">Alphabet</label>
+            <input type="text" id="alphabet" required><br>
+
+            <label for="transitions">Transitions</label>
+            <input type="text" id="transitions" required><br>
+
+            <label for="start-state">Start State:</label>
+            <input type="text" id="start-state" required><br>
+
+            <label for="final-states">Accept States (final states):</label>
+            <input type="text" id="final-states" required><br>
+
+            <button type="submit">Create FA</button>
+        </form>
+
+        <h2>Test Finite Automaton</h2>
+        <button id="test-deterministic">Check if FA is Deterministic</button>
+        <button id="test-string">Test String Acceptance</button>
+        <input type="text" id="test-string-input" placeholder="Enter string"><br>
+
+        <h2>Transformations</h2>
+        <button id="convert-to-dfa">Convert NFA to DFA</button>
+        <button id="minimize-dfa">Minimize DFA</button>
+
+        <div class="fa-display"></div>
+        <div id="cy" style="width: 800px; height: 600px;"></div>
+    </div>
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
