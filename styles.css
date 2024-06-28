@@ -1,148 +1,3 @@
-/*html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #f1f1f1;
-}
-
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0 20px;
-}
-
-.finite{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0 20px;
-}
-
-#fa-form {
-    width: 100%;
-    max-width: 500px;
-    background: #fff;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-}
-
-.title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-align: center;
-    color: blue;
-}
-
-label {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 15px;
-    background: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #0056b3;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-input :hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-}
-
-h2 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-align: center;
-    color: blue;
-}
-#test-deterministic {
-    width: 100%;
-    max-width: 500px;
-    background: #fff;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-}
-#test-string {
-    width: 100%;
-    max-width: 500px;
-    background: #fff;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-}
-#test-string-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-#convert-to-dfa {
-    width: 100%;
-    max-width: 500px;
-    background: #fff;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-}
-#minimize-dfa {
-    width: 100%;
-    max-width: 500px;
-    background: #fff;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-}
-
-
-.fa-display {
-    width: 100%;
-    max-width: 500px;
-    background: #fff;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-}*/
 
 /* Reset default margins and padding */
 * {
@@ -166,6 +21,12 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+.output {
+    flex: 1;
+    margin-left: 20px;
+    max-width: 400px;
 }
 
 h1 {
@@ -183,6 +44,7 @@ h1 {
 h2 {
     font-size: 1.5em;
     margin-top: 30px;
+    text-align: center;
 }
 
 form {
