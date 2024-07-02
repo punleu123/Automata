@@ -5,40 +5,64 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* navigaataion */
-.navigation {
+/* header */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    padding: 5px 70px;
+    background-color: #ffff;
+    border-bottom: 3px solid #e1e0e0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
-    color: #fff;
-    padding: 10px 20px;
+    z-index: 100;
 }
-.navigation a {
-    color: #000000;
-    text-decoration: none;
-}
-.navigation a:hover {
-    text-decoration: underline;
-}
-/* Logo */
-.logo {
-    width: 400px;
-}
-/* menu */
-.menu {
+ul{
     display: flex;
+}
+ul li a{
+    font-family: "Inter", sans-serif;
+    position: relative;
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 70px;
+}
+ul li {
+    list-style: none;
+}
+ul li a{
+    color: #000;
+}
+.active {
+    color: #FF3F03;
+}
+ul li a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #FF3F03;
+    transition: .3s;
 
 }
-.menu a {
-    margin-left: 10px;
+ul li a:hover::before{
+    width: 100%;
 }
-.menu a i {
-    margin-right: 5px;
+ul li a:hover{
+    color: #FF3F03;
+    transition: .3s;
 }
-li {
-    list-style-type: none;
-}
+
 
 /* Basic styles for the entire page */
 body {
@@ -50,7 +74,9 @@ body {
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin-top : 20px;
+    align-items: center;
+    margin: 20px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -130,3 +156,4 @@ button:hover {
         width: 100%;
     }
 }
+

@@ -3,26 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/cytoscape@3.20.0/dist/cytoscape.min.js"></script>
-    
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>About</title>
 </head>
 <body>
-    <div class="container">
-        <!-- navigation -->
-        <nav class="navigation">
-            <!-- logo -->
-            <div class="logo">
-                <img src="/asset/image.png" alt="" style="width: 100%;">
-            </div>
-            <!-- links -->
-            <ul class="menu">
-                <li><a href="home_index.html">Home</a></li>
-                <li><a href="calculate_index.html">Calculate</a></li>
-                <li><a href="about_index.html">About</a></li>
-                <li><a href="contact_index.html">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- header -->
+    <header class="header">
+        <a href="home.html" class="logo"><img src="/asset/image.png" alt="CADT"></a>
+        <ul>
+            <li><a href="home_index.html" class="nav-link">Home</a></li>
+            <li><a href="about_index.html" class="nav-link active">About</a></li>
+            <li><a href="calculate_index.html" class="nav-link">Calculate</a></li>
+            <li><a href="contact_index.html" class="nav-link">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- body -->
+     <div class="container">
+        <div class="explain">
+            <p>Automata calculator is a computational tool designed to aid 
+                in the study and analysis of automata, which are mathematical 
+                models for defining and analyzing computational processes. 
+                Automata theory is a branch of computer science that deals 
+                with the design and analysis of algorithms and abstract machines, 
+                such as finite automata, pushdown automata, and Turing machines. 
+            </p>
+        </div>
+        <div class="logo-about">
+            <img src="/asset/lec23-evenodd.svg" width="500px" alt="">
+        </div>
+     </div>
+     <!-- javascript -->
+      <script src="active.js"></script>
 </body>
 </html>
